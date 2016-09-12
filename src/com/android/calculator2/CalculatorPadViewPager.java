@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 The Android Open Source Project
+ * Copyright (C) 2016 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -92,7 +92,7 @@ public class CalculatorPadViewPager extends ViewPager {
         super(context, attrs);
 
         setAdapter(mStaticPagerAdapter);
-        setBackgroundColor(Color.BLACK);
+        setBackgroundColor(context.getColor(R.color.pad_view_pager_background));
         setPageMargin(getResources().getDimensionPixelSize(R.dimen.pad_page_margin));
         setPageTransformer(false, mPageTransformer);
         addOnPageChangeListener(mOnPageChangeListener);
